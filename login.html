@@ -1,0 +1,53 @@
+<link rel="stylesheet" type="text/css" href="login.css">
+<div class="container">
+    <div class="form-container" id="login-form">
+        <h2>Login</h2>
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <button onclick="validateLogin()">Login</button>
+        <p>Don't have an account? <a href="#" onclick="toggleForm()">Sign Up</a></p>
+    </div>
+    <div class="form-container hidden" id="signup-form">
+        <h2>Sign Up</h2>
+        <input type="text" id="signup-username" placeholder="Username">
+        <input type="email" id="signup-email" placeholder="Email">
+        <input type="password" id="signup-password" placeholder="Password">
+        <button onclick="validateSignup()">Sign Up</button>
+        <p>Already have an account? <a href="#" onclick="toggleForm()">Login</a></p>
+    </div>
+</div>
+
+<script>
+    function toggleForm() {
+        var loginForm = document.getElementById('login-form');
+        var signupForm = document.getElementById('signup-form');
+
+        loginForm.classList.toggle('hidden');
+        signupForm.classList.toggle('hidden');
+    }
+
+    function validateLogin() {
+        var username = document.getElementById('username').value;
+        var password = document.getElementById('password').value;
+
+        if (username.trim() === '' || password.trim() === '') {
+            alert('Please fill in all the details.');
+        } else {
+            
+            window.location.href = "program.html";
+        }
+    }
+
+    function validateSignup() {
+        var username = document.getElementById('signup-username').value;
+        var email = document.getElementById('signup-email').value;
+        var password = document.getElementById('signup-password').value;
+
+        if (username.trim() === '' || email.trim() === '' || password.trim() === '') {
+            alert('Please fill in all the details.');
+        } else {
+            
+            window.location.href = "program.html";
+        }
+    }
+</script>
