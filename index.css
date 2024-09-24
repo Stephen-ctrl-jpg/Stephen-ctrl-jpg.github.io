@@ -1,0 +1,426 @@
+header {
+    background: linear-gradient(135deg, #4568dc, #b06ab3);
+    color: orange;
+    padding: 3px;
+    font-family: "Times New Roman";
+    font-size: 26px;
+    text-align: center;
+    cursor: pointer;
+    
+}
+
+header p {
+    margin: 0;
+}
+
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header a {
+    color: black;
+    font-family: "Sitka Small", Semibold;
+    text-decoration: none;
+    font-size: 25px;
+width: 50px;
+height: 50px;
+
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.left-nav {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background: linear-gradient(135deg, #4568dc, #b06ab3);
+    padding: 5px; /* Reduced padding around the nav */
+    border-radius: 0 10px 10px 0;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.left-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.left-nav ul li {
+    margin: 0px 0; /* Further reduced the gap between list items */
+}
+
+.left-nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+    padding: 0px 5px; /* Reduced padding inside the links */
+    line-height: 1; /* Reduced line height */
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 3px;
+}
+
+.left-nav ul li a:hover {
+    background-color: #575757;
+    color: #fff;
+}
+
+
+header img {
+    height: 125px;
+    width: auto;
+}
+
+.button {
+    background: linear-gradient(135deg, #ddd6f3, #faaca8);
+    color: blue;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    width: 10%;
+}
+
+/* Section Styles */
+section {
+    padding: 40px 0; /* Adds padding inside the section */
+    margin: 20px 0;  /* Adds space outside the section */
+}
+
+/* Home Section Styles */
+#home {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('college-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    background: linear-gradient(135deg, #ddd6f3, #faaca8);
+}
+
+#video-container {
+    width: 130%;
+    height: auto;
+    overflow: hidden;
+}
+
+#video-container video {
+    width: 130%;
+    height: auto;
+}
+
+#home h1 {
+    background: linear-gradient(135deg, #ddd6f3, #faaca8);
+    color: red;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+#home p {
+    color: pink;
+    font-size: 1.5rem;
+    max-width: 30rem;
+    text-align: center;
+}
+
+/* About Section Styles */
+#about {
+    padding: 4rem 0;
+    background: linear-gradient(135deg, #2E3192, #1BFFFF);
+}
+
+#about .heading {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#about p {
+    max-width: 60rem;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+/* Courses Section Styles */
+#courses {
+    padding: 20px;
+    background: linear-gradient(135deg, #02AABD, #00CDAC);
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.course-item {
+    background: linear-gradient(135deg, #FF61D2, #FE9090);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.course-content {
+    padding: 15px;
+    background: linear-gradient(135deg, #FF61D2, #FE9090);
+}
+
+.course-content h3 {
+    margin: 0 0 10px 0;
+    font-size: 20px;
+    font-family: "Times New Roman";
+}
+
+.course-content p {
+    font-size: 14px;
+    margin: 0 0 10px 0;
+    line-height: 1.5;
+}
+
+.course-content a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+.course-content a:hover {
+    text-decoration: underline;
+}
+
+.course-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Faculties Section Styles */
+#faculties {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    text-align: center;
+    width: 30%;
+    background: linear-gradient(135deg, #ddd6f3, #faaca8);
+}
+
+.card img {
+    border-radius: 50%;
+    width: 50%;
+}
+
+.popular-course .faculty {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60%;
+    background: linear-gradient(135deg, #ddd6f3, #faaca8);
+    padding: 1rem;
+    border-top: 1px solid #ddd;
+    text-align: center;
+}
+
+.popular-course .faculty img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10%;
+    margin-bottom: 1rem;
+}
+
+.popular-course .faculty h4 {
+    margin-bottom: 0.5rem;
+}
+
+.popular-course .faculty p {
+    font-size: 0.8rem;
+    color: blue;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: Arial;
+}
+
+.title {
+    color: grey;
+    font-size: 18px;
+}
+
+button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background: linear-gradient(135deg, #ddd6f3, #faaca8);
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+}
+
+button:hover, a:hover {
+    opacity: 0.7;
+}
+
+/* Contact Form Styles */
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(to right, #03001e, #7303c0, #ec38bc, #fdeff9);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    padding: 40px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(135deg, #4568dc, #b06ab3);
+}
+
+form label,
+form input,
+form textarea,
+form button {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.2em;
+}
+
+form button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+/* Footer Styles */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #ddd6f3, #faaca8);
+    padding: 20px 0;
+}
+
+footer .Facebook,
+footer .Instagram,
+footer .LinkedIn,
+footer .WhatsApp {
+    text-align: center;
+    margin: 0 20px;
+}
+
+footer .Facebook img,
+footer .Instagram img,
+footer .LinkedIn img,
+footer .WhatsApp img {
+    width: 80px;
+    height: auto;
+    border-radius: 50%; /* Round the logos if desired */
+    transition: transform 0.3s ease-in-out;
+}
+
+footer .Facebook img:hover,
+footer .Instagram img:hover,
+footer .LinkedIn img:hover,
+footer .WhatsApp img:hover {
+    transform: scale(1.1); /* Zoom effect on hover */
+}
+
+footer span {
+    display: block;
+    margin-top: 5px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #333;
+}
+
+footer a:hover {
+    color: #666;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.contact-info .email,
+.contact-info .phone {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-info .email img,
+.contact-info .phone img {
+    width: 50px;
+    height: 80px;
+}
+
+.contact-info .email a,
+.contact-info .phone span {
+    font-size: 16px;
+}
+
+.contact-info .email a {
+    text-decoration: none;
+    color: blue;
+}
+
+.contact-info .email a:hover {
+    text-decoration: underline;
+}
+
+.contact-info .phone span {
+    color: blue;
+}
